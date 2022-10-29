@@ -39,6 +39,8 @@
 		283BF841290C917400AB53ED /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF840290C917400AB53ED /* FirebaseRemoteConfigSwift */; };
 		283BF843290C917400AB53ED /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF842290C917400AB53ED /* FirebaseStorage */; };
 		283BF845290C917400AB53ED /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF844290C917400AB53ED /* FirebaseStorageCombine-Community */; };
+		286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F6290DDC1300E65AAA /* SignUpView.swift */; };
+		286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F7290DDC1300E65AAA /* Camera+Library.swift */; };
 		2D7E9E06290CA28500310FCA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E05290CA28500310FCA /* SplashScreenView.swift */; };
 		2D7E9E09290CA7E600310FCA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7E9E08290CA7E600310FCA /* Lottie */; };
 		2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0A290CAA6F00310FCA /* LottieView.swift */; };
@@ -52,6 +54,8 @@
 		283BF7FE290C8FF800AB53ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		283BF80D290C910200AB53ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		286239F6290DDC1300E65AAA /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		286239F7290DDC1300E65AAA /* Camera+Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+Library.swift"; sourceTree = "<group>"; };
 		2D7E9E05290CA28500310FCA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		2D7E9E0A290CAA6F00310FCA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2D7E9E0C290CAD6500310FCA /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
@@ -118,10 +122,12 @@
 				2D7E9E0C290CAD6500310FCA /* duck.json */,
 				283BF7FA290C8FF700AB53ED /* quackerApp.swift */,
 				283BF7FC290C8FF700AB53ED /* ContentView.swift */,
+				286239F7290DDC1300E65AAA /* Camera+Library.swift */,
+				286239F6290DDC1300E65AAA /* SignUpView.swift */,
+				2D7E9E05290CA28500310FCA /* SplashScreenView.swift */,
 				283BF7FE290C8FF800AB53ED /* Assets.xcassets */,
 				283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */,
 				283BF80D290C910200AB53ED /* GoogleService-Info.plist */,
-				2D7E9E05290CA28500310FCA /* SplashScreenView.swift */,
 				283BF80A290C90EF00AB53ED /* Preview Content */,
 				2D7E9E0A290CAA6F00310FCA /* LottieView.swift */,
 			);
@@ -242,8 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */,
+				286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */,
 				283BF7FB290C8FF700AB53ED /* quackerApp.swift in Sources */,
 				2D7E9E06290CA28500310FCA /* SplashScreenView.swift in Sources */,
+				286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */,
 				2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
