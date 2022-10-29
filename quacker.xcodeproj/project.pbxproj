@@ -39,9 +39,18 @@
 		283BF841290C917400AB53ED /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF840290C917400AB53ED /* FirebaseRemoteConfigSwift */; };
 		283BF843290C917400AB53ED /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF842290C917400AB53ED /* FirebaseStorage */; };
 		283BF845290C917400AB53ED /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF844290C917400AB53ED /* FirebaseStorageCombine-Community */; };
+
 		2FEE8E8A290CA05700D91E14 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE8E89290CA05700D91E14 /* LoginView.swift */; };
 		2FEE8E8D290CC12F00D91E14 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEE8E8C290CC12F00D91E14 /* GoogleSignIn */; };
 		2FEE8E8F290CC12F00D91E14 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEE8E8E290CC12F00D91E14 /* GoogleSignInSwift */; };
+
+		286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F6290DDC1300E65AAA /* SignUpView.swift */; };
+		286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F7290DDC1300E65AAA /* Camera+Library.swift */; };
+		2D7E9E06290CA28500310FCA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E05290CA28500310FCA /* SplashScreenView.swift */; };
+		2D7E9E09290CA7E600310FCA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7E9E08290CA7E600310FCA /* Lottie */; };
+		2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0A290CAA6F00310FCA /* LottieView.swift */; };
+		2D7E9E0D290CAD6500310FCA /* duck.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0C290CAD6500310FCA /* duck.json */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +60,16 @@
 		283BF7FE290C8FF800AB53ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		283BF80D290C910200AB53ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+
 		2FEE8E89290CA05700D91E14 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2FEE8E90290CC3F000D91E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+
+		286239F6290DDC1300E65AAA /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		286239F7290DDC1300E65AAA /* Camera+Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+Library.swift"; sourceTree = "<group>"; };
+		2D7E9E05290CA28500310FCA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		2D7E9E0A290CAA6F00310FCA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		2D7E9E0C290CAD6500310FCA /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +94,7 @@
 				2FEE8E8D290CC12F00D91E14 /* GoogleSignIn in Frameworks */,
 				283BF833290C917400AB53ED /* FirebaseInAppMessaging-Beta in Frameworks */,
 				283BF825290C917400AB53ED /* FirebaseDatabaseSwift in Frameworks */,
+				2D7E9E09290CA7E600310FCA /* Lottie in Frameworks */,
 				283BF82F290C917400AB53ED /* FirebaseFunctions in Frameworks */,
 				283BF845290C917400AB53ED /* FirebaseStorageCombine-Community in Frameworks */,
 				283BF83F290C917400AB53ED /* FirebaseRemoteConfig in Frameworks */,
@@ -114,14 +132,24 @@
 		283BF7F9290C8FF700AB53ED /* quacker */ = {
 			isa = PBXGroup;
 			children = (
+
 				2FEE8E90290CC3F000D91E14 /* Info.plist */,
 				283BF7FA290C8FF700AB53ED /* quackerApp.swift */,
 				283BF7FC290C8FF700AB53ED /* ContentView.swift */,
 				2FEE8E89290CA05700D91E14 /* LoginView.swift */,
+
+				2D7E9E0C290CAD6500310FCA /* duck.json */,
+				283BF7FA290C8FF700AB53ED /* quackerApp.swift */,
+				283BF7FC290C8FF700AB53ED /* ContentView.swift */,
+				286239F7290DDC1300E65AAA /* Camera+Library.swift */,
+				286239F6290DDC1300E65AAA /* SignUpView.swift */,
+				2D7E9E05290CA28500310FCA /* SplashScreenView.swift */,
+
 				283BF7FE290C8FF800AB53ED /* Assets.xcassets */,
 				283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */,
 				283BF80D290C910200AB53ED /* GoogleService-Info.plist */,
 				283BF80A290C90EF00AB53ED /* Preview Content */,
+				2D7E9E0A290CAA6F00310FCA /* LottieView.swift */,
 			);
 			path = quacker;
 			sourceTree = "<group>";
@@ -177,8 +205,12 @@
 				283BF840290C917400AB53ED /* FirebaseRemoteConfigSwift */,
 				283BF842290C917400AB53ED /* FirebaseStorage */,
 				283BF844290C917400AB53ED /* FirebaseStorageCombine-Community */,
+
 				2FEE8E8C290CC12F00D91E14 /* GoogleSignIn */,
 				2FEE8E8E290CC12F00D91E14 /* GoogleSignInSwift */,
+
+				2D7E9E08290CA7E600310FCA /* Lottie */,
+
 			);
 			productName = quacker;
 			productReference = 283BF7F7290C8FF700AB53ED /* quacker.app */;
@@ -210,7 +242,11 @@
 			mainGroup = 283BF7EE290C8FF700AB53ED;
 			packageReferences = (
 				283BF80F290C917400AB53ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+
 				2FEE8E8B290CC12F00D91E14 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+
+				2D7E9E07290CA7E600310FCA /* XCRemoteSwiftPackageReference "lottie-ios" */,
+
 			);
 			productRefGroup = 283BF7F8290C8FF700AB53ED /* Products */;
 			projectDirPath = "";
@@ -226,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7E9E0D290CAD6500310FCA /* duck.json in Resources */,
 				283BF80C290C90EF00AB53ED /* Preview Assets.xcassets in Resources */,
 				283BF7FF290C8FF800AB53ED /* Assets.xcassets in Resources */,
 				283BF80E290C910200AB53ED /* GoogleService-Info.plist in Resources */,
@@ -241,7 +278,11 @@
 			files = (
 				2FEE8E8A290CA05700D91E14 /* LoginView.swift in Sources */,
 				283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */,
+				286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */,
 				283BF7FB290C8FF700AB53ED /* quackerApp.swift in Sources */,
+				2D7E9E06290CA28500310FCA /* SplashScreenView.swift in Sources */,
+				286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */,
+				2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +410,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"quacker/Preview Content\"";
 				DEVELOPMENT_TEAM = HK6R3F5RZP;
 				ENABLE_PREVIEWS = YES;
@@ -399,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"quacker/Preview Content\"";
 				DEVELOPMENT_TEAM = HK6R3F5RZP;
 				ENABLE_PREVIEWS = YES;
@@ -454,12 +497,21 @@
 				minimumVersion = 9.6.0;
 			};
 		};
+
 		2FEE8E8B290CC12F00D91E14 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
 			requirement = {
 				branch = main;
 				kind = branch;
+
+		2D7E9E07290CA7E600310FCA /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -600,6 +652,7 @@
 			package = 283BF80F290C917400AB53ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
 		};
+
 		2FEE8E8C290CC12F00D91E14 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2FEE8E8B290CC12F00D91E14 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
@@ -609,6 +662,12 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2FEE8E8B290CC12F00D91E14 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+
+		2D7E9E08290CA7E600310FCA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D7E9E07290CA7E600310FCA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
