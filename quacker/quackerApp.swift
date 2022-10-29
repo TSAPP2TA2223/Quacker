@@ -21,7 +21,7 @@ struct quackerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignUpView()
         }
     }
 }

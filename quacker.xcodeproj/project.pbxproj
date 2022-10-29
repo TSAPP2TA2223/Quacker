@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280F3ECC290CBFAE0091D547 /* Camera+Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F3ECB290CBFAE0091D547 /* Camera+Library.swift */; };
 		283BF7FB290C8FF700AB53ED /* quackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283BF7FA290C8FF700AB53ED /* quackerApp.swift */; };
 		283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283BF7FC290C8FF700AB53ED /* ContentView.swift */; };
 		283BF7FF290C8FF800AB53ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283BF7FE290C8FF800AB53ED /* Assets.xcassets */; };
@@ -39,15 +40,18 @@
 		283BF841290C917400AB53ED /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF840290C917400AB53ED /* FirebaseRemoteConfigSwift */; };
 		283BF843290C917400AB53ED /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF842290C917400AB53ED /* FirebaseStorage */; };
 		283BF845290C917400AB53ED /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF844290C917400AB53ED /* FirebaseStorageCombine-Community */; };
+		283BF847290CA03900AB53ED /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283BF846290CA03900AB53ED /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280F3ECB290CBFAE0091D547 /* Camera+Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera+Library.swift"; sourceTree = "<group>"; };
 		283BF7F7290C8FF700AB53ED /* quacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283BF7FA290C8FF700AB53ED /* quackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quackerApp.swift; sourceTree = "<group>"; };
 		283BF7FC290C8FF700AB53ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		283BF7FE290C8FF800AB53ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		283BF80D290C910200AB53ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		283BF846290CA03900AB53ED /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */,
 				283BF80D290C910200AB53ED /* GoogleService-Info.plist */,
 				283BF80A290C90EF00AB53ED /* Preview Content */,
+				283BF846290CA03900AB53ED /* SignUpView.swift */,
+				280F3ECB290CBFAE0091D547 /* Camera+Library.swift */,
 			);
 			path = quacker;
 			sourceTree = "<group>";
@@ -228,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */,
+				280F3ECC290CBFAE0091D547 /* Camera+Library.swift in Sources */,
+				283BF847290CA03900AB53ED /* SignUpView.swift in Sources */,
 				283BF7FB290C8FF700AB53ED /* quackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
