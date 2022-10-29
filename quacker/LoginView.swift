@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-import _AuthenticationServices_SwiftUI
 import Firebase
-import GoogleSignIn
 
 struct LoginView: View {
-    @State private var username = ""
+    @State private var email = ""
     @State private var password = ""
+    @State private var userIsLoggedIn = false
     init(){
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.systemYellow]
     }
@@ -21,9 +20,8 @@ struct LoginView: View {
             GeometryReader { geo in
                 ZStack{
                     Color.blue
-                        .ignoresSafeArea()
                     VStack{
-                        TextField("Username", text: $username)
+                        TextField("Username", text: $email)
                             .foregroundColor(.black)
                             .textFieldStyle(.roundedBorder)
                             .background(.white)
@@ -40,7 +38,7 @@ struct LoginView: View {
                             .autocorrectionDisabled(true)
                         
                         Button {
-                            // Login
+                            login()
                         } label: {
                             Text("Quack in")
                                 .bold()
@@ -62,10 +60,27 @@ struct LoginView: View {
                         }
                     }
                 }
+                .ignoresSafeArea()
             }
             .navigationTitle("Login")
+            .onAppear{
+                Auth.auth().addStateDidChangeListener { auth, user in
+                    if user != nil {
+                        userIsLoggedIn.toggle()
+                    }
+                }
+            }
         }
     }
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+        }
+    }
+    
 }
 
 struct LoginView_Previews: PreviewProvider {
