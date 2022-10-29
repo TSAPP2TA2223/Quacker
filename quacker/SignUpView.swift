@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignUpView: View {
     init(){
@@ -15,6 +16,7 @@ struct SignUpView: View {
     @State private var password = ""
     @State private var username = ""
     @State private var fullName = ""
+    @State var selectedImage: UIImage = UIImage(systemName: "person.crop.circle.fill")!
     
     @State private var showDialogue: Bool = false
     @State private var showImagePicker: Bool = false
@@ -27,10 +29,11 @@ struct SignUpView: View {
                     Color.blue
                     VStack(spacing: 20){
                         
-                        Image(systemName: "person.crop.circle.fill")
+                        Image(uiImage: selectedImage)
                             .resizable()
                             .frame(width: 75, height: 75)
                             .foregroundColor(.white)
+                            .clipShape(Circle())
                             
                         Button("Add Profile Picture"){
                             self.showDialogue = true
@@ -81,7 +84,7 @@ struct SignUpView: View {
                             
                         
                         Button {
-                            //TODO: Sign up
+                            register()
                         } label: {
                             Text("Quack up")
                                 .bold()
@@ -98,9 +101,9 @@ struct SignUpView: View {
                 .ignoresSafeArea()
                 .sheet(isPresented: $showImagePicker, onDismiss: nil) {
                     if sourceType == 0{
-                        CameraView()
+                        ImagePickerCamera(selectedImage: $selectedImage, showImagePicker: $showImagePicker)
                     } else {
-                        ImagePicker()
+                        ImagePicker(selectedImage: $selectedImage, showImagePicker: $showImagePicker)
                     }
                 }
             }
@@ -109,6 +112,13 @@ struct SignUpView: View {
         }
         
         
+    }
+    func register(){
+        Auth.auth().createUser(withEmail: email, password: password){ result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
     }
 }
 
