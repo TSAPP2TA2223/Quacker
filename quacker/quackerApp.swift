@@ -14,6 +14,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     return true
   }
 }
+
 @main
 struct quackerApp: App {
     // register app delegate for Firebase setup
