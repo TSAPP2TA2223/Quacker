@@ -41,11 +41,11 @@
 		286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F6290DDC1300E65AAA /* SignUpView.swift */; };
 		286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F7290DDC1300E65AAA /* Camera+Library.swift */; };
 		286239FD290DE45D00E65AAA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239FA290DE45D00E65AAA /* LoginView.swift */; };
-		286239FE290DE45D00E65AAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 286239FB290DE45D00E65AAA /* GoogleService-Info.plist */; };
 		2D7E9E06290CA28500310FCA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E05290CA28500310FCA /* SplashScreenView.swift */; };
 		2D7E9E09290CA7E600310FCA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7E9E08290CA7E600310FCA /* Lottie */; };
 		2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0A290CAA6F00310FCA /* LottieView.swift */; };
 		2D7E9E0D290CAD6500310FCA /* duck.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0C290CAD6500310FCA /* duck.json */; };
+		2FF6ABD4290EF7EC002890CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6ABD3290EF7EC002890CC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,10 +57,10 @@
 		286239F6290DDC1300E65AAA /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		286239F7290DDC1300E65AAA /* Camera+Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+Library.swift"; sourceTree = "<group>"; };
 		286239FA290DE45D00E65AAA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		286239FB290DE45D00E65AAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D7E9E05290CA28500310FCA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		2D7E9E0A290CAA6F00310FCA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2D7E9E0C290CAD6500310FCA /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
+		2FF6ABD3290EF7EC002890CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,16 +123,16 @@
 			children = (
 				2D7E9E0C290CAD6500310FCA /* duck.json */,
 				283BF7FA290C8FF700AB53ED /* quackerApp.swift */,
+				2D7E9E0A290CAA6F00310FCA /* LottieView.swift */,
 				283BF7FC290C8FF700AB53ED /* ContentView.swift */,
 				286239F7290DDC1300E65AAA /* Camera+Library.swift */,
-				286239FB290DE45D00E65AAA /* GoogleService-Info.plist */,
 				286239FA290DE45D00E65AAA /* LoginView.swift */,
 				286239F6290DDC1300E65AAA /* SignUpView.swift */,
 				2D7E9E05290CA28500310FCA /* SplashScreenView.swift */,
+				2FF6ABD3290EF7EC002890CC /* GoogleService-Info.plist */,
 				283BF7FE290C8FF800AB53ED /* Assets.xcassets */,
 				283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */,
 				283BF80A290C90EF00AB53ED /* Preview Content */,
-				2D7E9E0A290CAA6F00310FCA /* LottieView.swift */,
 			);
 			path = quacker;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			files = (
 				2D7E9E0D290CAD6500310FCA /* duck.json in Resources */,
 				283BF80C290C90EF00AB53ED /* Preview Assets.xcassets in Resources */,
-				286239FE290DE45D00E65AAA /* GoogleService-Info.plist in Resources */,
+				2FF6ABD4290EF7EC002890CC /* GoogleService-Info.plist in Resources */,
 				283BF7FF290C8FF800AB53ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
