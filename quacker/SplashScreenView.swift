@@ -16,7 +16,7 @@ struct SplashScreenView: View {
             Color.yellow
             if isActive{
                 //Archivo al que va
-                AddQuackView()
+                LoginView()
             } else {
                 
                 VStack{
