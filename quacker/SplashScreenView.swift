@@ -17,7 +17,6 @@ struct SplashScreenView: View {
             if isActive{
                 //Archivo al que va
                 LoginView()
-                    //.environmentObject(dataManager)
             } else {
                 
                 VStack{

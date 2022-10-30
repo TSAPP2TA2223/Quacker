@@ -12,14 +12,16 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var userIsLoggedIn = false
+    @State private var path = [String]()
     init(){
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.systemYellow]
+        try? Auth.auth().signOut()
     }
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $path) {
             GeometryReader { geo in
                 ZStack{
-                    Color.blue
+                    Color("ColorBackground")
                     VStack{
                         TextField("Username", text: $email)
                             .foregroundColor(.black)
@@ -28,6 +30,7 @@ struct LoginView: View {
                             .cornerRadius(20)
                             .frame(width: geo.size.width - (geo.size.width/10), height: 40)
                             .autocorrectionDisabled(false)
+                            .autocapitalization(.none)
                         
                         SecureField("Password", text: $password)
                             .foregroundColor(.black)
@@ -39,10 +42,7 @@ struct LoginView: View {
                         
                         Button {
                             login()
-                            if userIsLoggedIn == true {
-                                print("it is logged in woo")c
-                            }
-                            
+                        
                         } label: {
                             Text("Quack in")
                                 .bold()
@@ -55,7 +55,7 @@ struct LoginView: View {
                         }
                         
                         Button{
-                            // Register
+                            path.append("register")
                         } label: {
                             Text("Don't have an account?")
                                 .bold()
@@ -66,14 +66,15 @@ struct LoginView: View {
                 }
                 .ignoresSafeArea()
             }
-            .navigationTitle("Login")
-            .onAppear{
-                Auth.auth().addStateDidChangeListener { auth, user in
-                    if user != nil {
-                        userIsLoggedIn.toggle()
-                    }
+            .navigationDestination(for: String.self, destination: { string in
+                if string == "register" {
+                    SignUpView()
+                } else {
+                    AddQuackView()
                 }
-            }
+            })
+            .navigationTitle("Login")
+            .navigationBarBackButtonHidden(true)
         }
     }
     func login() {
@@ -81,6 +82,13 @@ struct LoginView: View {
             if error != nil {
                 print(error!.localizedDescription)
             }
+        }
+        let authemail = Auth.auth().currentUser?.email ?? ""
+        print(authemail)
+        if authemail != ""{
+            userIsLoggedIn = true
+            path.append(Auth.auth().currentUser!.email!)
+           
         }
     }
     
@@ -91,4 +99,3 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
-
