@@ -11,3 +11,9 @@ struct Quack: Identifiable {
     public var owner: String
     public var contents: String 
 }
+struct QuackFetch : Identifiable {
+    public var id = UUID()
+    public var owner: String
+    public var contents: String
+    public var ownerFullName : String
+}

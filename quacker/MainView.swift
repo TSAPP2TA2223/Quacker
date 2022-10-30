@@ -6,25 +6,26 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct MainView: View {
-    
-    @State private var userName = ""
-    @State private var quack = ""
-    @State private var pfpUser = ""
-    
+    @EnvironmentObject var dataManager : DataManager
     var body: some View {
-        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            HStack {
-                Image(systemName: "photo")
-                VStack(alignment: .leading) {
-                    Text("Username")
-                    Text("Quack")
-                        .font(.subheadline)
+        VStack {
+            List(dataManager.quacks, id: \.id) { quack in
+                HStack {
+                    Image(systemName: "photo")
+                    VStack(alignment: .leading) {
+                        Text(quack.owner)
+                        Text(quack.contents)
+                            .font(.subheadline)
+                    }
                 }
             }
         }
     }
+    
+    
 }
 
 struct MainView_Previews: PreviewProvider {

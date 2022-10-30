@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SplashScreenView: View {
-    @EnvironmentObject var dataManager: DataManager
+    @StateObject var dataManager = DataManager()
     @State private var isActive = false
     
     var body: some View {
@@ -16,7 +16,8 @@ struct SplashScreenView: View {
             Color.yellow
             if isActive{
                 //Archivo al que va
-                AddQuackView()
+                LoginView()
+                    //.environmentObject(dataManager)
             } else {
                 
                 VStack{

@@ -40,7 +40,7 @@ struct LoginView: View {
                         Button {
                             login()
                             if userIsLoggedIn == true {
-                                print("it is logged in woo")
+                                print("it is logged in woo")c
                             }
                             
                         } label: {
