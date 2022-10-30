@@ -11,35 +11,55 @@ import Firebase
 struct AddQuackView: View {
     @EnvironmentObject var dataManager: DataManager
     @State private var content = ""
+    @State private var userImage = UIImage(systemName: "person.crop.circle.fill")!
     
     //TODO: Build a decent fucking UI lol
     
     
     var body: some View {
         VStack{
+            Image(uiImage: userImage)
+                .resizable()
+                .frame(width: 75, height: 75)
+                .foregroundColor(.white)
+                .clipShape(Circle())
             TextField("Quack", text: $content)
-            
             Button {
-                //TODO: Get this check out and use currentUser from the Login View :)
-                Auth.auth().signIn(withEmail: "abbytorade@icloud.com", password: "123456") { result, error in
-                    if error != nil {
-                        print(error!.localizedDescription)
-                    } else {
-                        print("logged in woo")
-                        sendQuack(quackContents: content, quackOwner: (Auth.auth().currentUser?.email)!)
-                    }
-                }
-                
+                sendQuack(quackContents: content, quackOwner: (Auth.auth().currentUser?.email)!)
             } label: {
                 Text("Send")
             }
             .padding()
         }
-        
-        
+        .navigationBarBackButtonHidden(true)
+        .onAppear(perform: fetchImage)
     }
-       
+        
+    
+    func fetchImage(){
+        let db = Firestore.firestore()
+        let docRef = db.collection("UserProfiles").document(Auth.auth().currentUser!.email!)
+        docRef.getDocument { snapshot, error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            
+            if let snapshot = snapshot{
+                let data = snapshot.data()
+                let img = data?["profilePicture"] as? String ?? ""
+                print(img)
+                userImage = convertBase64ToImage(imageString: img)
+            }
+        }
+    }
+    func convertBase64ToImage(imageString: String) -> UIImage {
+        let imageData = Data(base64Encoded: imageString,
+                             options: Data.Base64DecodingOptions.ignoreUnknownCharacters)!
+        return UIImage(data: imageData)!
+    }
 }
+   
 
 struct AddQuackView_Previews: PreviewProvider {
     static var previews: some View {
