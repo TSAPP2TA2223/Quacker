@@ -38,6 +38,9 @@
 		283BF841290C917400AB53ED /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF840290C917400AB53ED /* FirebaseRemoteConfigSwift */; };
 		283BF843290C917400AB53ED /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF842290C917400AB53ED /* FirebaseStorage */; };
 		283BF845290C917400AB53ED /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 283BF844290C917400AB53ED /* FirebaseStorageCombine-Community */; };
+		2848DED5290EAB7C0001949C /* AddQuackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848DED4290EAB7C0001949C /* AddQuackView.swift */; };
+		2848DED7290EABF30001949C /* Quack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848DED6290EABF30001949C /* Quack.swift */; };
+		2848DED9290EB6830001949C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848DED8290EB6830001949C /* DataManager.swift */; };
 		286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F6290DDC1300E65AAA /* SignUpView.swift */; };
 		286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F7290DDC1300E65AAA /* Camera+Library.swift */; };
 		286239FD290DE45D00E65AAA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239FA290DE45D00E65AAA /* LoginView.swift */; };
@@ -54,6 +57,9 @@
 		283BF7FC290C8FF700AB53ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		283BF7FE290C8FF800AB53ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2848DED4290EAB7C0001949C /* AddQuackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuackView.swift; sourceTree = "<group>"; };
+		2848DED6290EABF30001949C /* Quack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quack.swift; sourceTree = "<group>"; };
+		2848DED8290EB6830001949C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		286239F6290DDC1300E65AAA /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		286239F7290DDC1300E65AAA /* Camera+Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+Library.swift"; sourceTree = "<group>"; };
 		286239FA290DE45D00E65AAA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -129,6 +135,9 @@
 				286239FA290DE45D00E65AAA /* LoginView.swift */,
 				286239F6290DDC1300E65AAA /* SignUpView.swift */,
 				2D7E9E05290CA28500310FCA /* SplashScreenView.swift */,
+				2848DED4290EAB7C0001949C /* AddQuackView.swift */,
+				2848DED8290EB6830001949C /* DataManager.swift */,
+				2848DED6290EABF30001949C /* Quack.swift */,
 				283BF7FE290C8FF800AB53ED /* Assets.xcassets */,
 				283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */,
 				283BF80A290C90EF00AB53ED /* Preview Content */,
@@ -251,11 +260,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */,
+				2848DED9290EB6830001949C /* DataManager.swift in Sources */,
 				286239FD290DE45D00E65AAA /* LoginView.swift in Sources */,
+				2848DED7290EABF30001949C /* Quack.swift in Sources */,
 				286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */,
 				283BF7FB290C8FF700AB53ED /* quackerApp.swift in Sources */,
 				2D7E9E06290CA28500310FCA /* SplashScreenView.swift in Sources */,
 				286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */,
+				2848DED5290EAB7C0001949C /* AddQuackView.swift in Sources */,
 				2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

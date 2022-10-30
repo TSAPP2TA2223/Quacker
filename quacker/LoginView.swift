@@ -39,6 +39,10 @@ struct LoginView: View {
                         
                         Button {
                             login()
+                            if userIsLoggedIn == true {
+                                print("it is logged in woo")
+                            }
+                            
                         } label: {
                             Text("Quack in")
                                 .bold()
@@ -77,7 +81,6 @@ struct LoginView: View {
             if error != nil {
                 print(error!.localizedDescription)
             }
-            
         }
     }
     
@@ -88,3 +91,4 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
+
