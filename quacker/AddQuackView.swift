@@ -49,8 +49,9 @@ struct AddQuackView_Previews: PreviewProvider {
 }
 func sendQuack(quackContents: String, quackOwner: String){
     let db = Firestore.firestore()
-    let ref = db.collection("Quacks").document(quackContents)
     let newQuack = Quack(owner: quackOwner, contents: quackContents)
+    
+    let ref = db.collection("Quacks").document(newQuack.id.description)
     ref.setData(["contents": newQuack.contents, "id" : 10, "owner": newQuack.owner]) { error in
         //TODO: error management
     }
