@@ -50,6 +50,7 @@
 		2D7E9E09290CA7E600310FCA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7E9E08290CA7E600310FCA /* Lottie */; };
 		2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0A290CAA6F00310FCA /* LottieView.swift */; };
 		2D7E9E0D290CAD6500310FCA /* duck.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0C290CAD6500310FCA /* duck.json */; };
+		2F378FC029128DAA0080C5AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F378FBF29128DAA0080C5AB /* DetailView.swift */; };
 		2FF5C225290F040100FC2EFB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF5C224290F040100FC2EFB /* MainView.swift */; };
 		2FF6ABD4290EF7EC002890CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6ABD3290EF7EC002890CC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		2D7E9E05290CA28500310FCA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		2D7E9E0A290CAA6F00310FCA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2D7E9E0C290CAD6500310FCA /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
+		2F378FBF29128DAA0080C5AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2FF5C224290F040100FC2EFB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2FF6ABD3290EF7EC002890CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 				283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */,
 				283BF80A290C90EF00AB53ED /* Preview Content */,
 				2FF5C224290F040100FC2EFB /* MainView.swift */,
+				2F378FBF29128DAA0080C5AB /* DetailView.swift */,
 			);
 			path = quacker;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */,
 				2881905729127D6A008EC8A9 /* ProfileView.swift in Sources */,
 				2848DED9290EB6830001949C /* DataManager.swift in Sources */,
+				2F378FC029128DAA0080C5AB /* DetailView.swift in Sources */,
 				286239FD290DE45D00E65AAA /* LoginView.swift in Sources */,
 				2848DED7290EABF30001949C /* Quack.swift in Sources */,
 				286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */,
