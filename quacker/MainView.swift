@@ -22,8 +22,26 @@ struct MainView: View {
                     }
                 }
             }
+            Button {
+                //TODO: Go to add quakc
+            } label: {
+                Text("+")
+                    .bold()
+                    .frame(width: 60, height: 60)
+                    .background{
+                        RoundedRectangle(cornerRadius: 40, style: .continuous)
+                            .foregroundColor(Color.yellow)
+                    }
+                    .foregroundColor(.white)
+                    .offset(x: 150, y: -50)
+                    .font(.system(size : 40))
+                    .multilineTextAlignment(.center)
+            }
+            
         }
-        .navigationBarBackButtonHidden(true) 
+        .navigationBarBackButtonHidden(true)
+        
+        
     }
     
     
@@ -32,5 +50,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .environmentObject(DataManager())
     }
 }
