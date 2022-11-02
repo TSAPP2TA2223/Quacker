@@ -85,15 +85,11 @@ struct LoginView: View {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
                 print(error!.localizedDescription)
+            } else {
+                path.append(Auth.auth().currentUser!.email!)
             }
         }
-        let authemail = Auth.auth().currentUser?.email ?? ""
-        print(authemail)
-        if authemail != ""{
-            userIsLoggedIn = true
-            path.append(Auth.auth().currentUser!.email!)
            
-        }
     }
     
 }
