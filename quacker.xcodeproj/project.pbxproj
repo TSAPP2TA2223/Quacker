@@ -49,6 +49,7 @@
 		2D7E9E09290CA7E600310FCA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7E9E08290CA7E600310FCA /* Lottie */; };
 		2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0A290CAA6F00310FCA /* LottieView.swift */; };
 		2D7E9E0D290CAD6500310FCA /* duck.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0C290CAD6500310FCA /* duck.json */; };
+		2FF5C225290F040100FC2EFB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF5C224290F040100FC2EFB /* MainView.swift */; };
 		2FF6ABD4290EF7EC002890CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6ABD3290EF7EC002890CC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		2D7E9E05290CA28500310FCA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		2D7E9E0A290CAA6F00310FCA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2D7E9E0C290CAD6500310FCA /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
+		2FF5C224290F040100FC2EFB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2FF6ABD3290EF7EC002890CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,15 +140,14 @@
 				286239F6290DDC1300E65AAA /* SignUpView.swift */,
 				2848DEDA290EFA8A0001949C /* User.swift */,
 				2D7E9E05290CA28500310FCA /* SplashScreenView.swift */,
-
 				2FF6ABD3290EF7EC002890CC /* GoogleService-Info.plist */,
-
 				2848DED4290EAB7C0001949C /* AddQuackView.swift */,
 				2848DED8290EB6830001949C /* DataManager.swift */,
 				2848DED6290EABF30001949C /* Quack.swift */,
 				283BF7FE290C8FF800AB53ED /* Assets.xcassets */,
 				283BF80B290C90EF00AB53ED /* Preview Assets.xcassets */,
 				283BF80A290C90EF00AB53ED /* Preview Content */,
+				2FF5C224290F040100FC2EFB /* MainView.swift */,
 			);
 			path = quacker;
 			sourceTree = "<group>";
@@ -271,6 +272,7 @@
 				286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */,
 				283BF7FB290C8FF700AB53ED /* quackerApp.swift in Sources */,
 				2D7E9E06290CA28500310FCA /* SplashScreenView.swift in Sources */,
+				2FF5C225290F040100FC2EFB /* MainView.swift in Sources */,
 				286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */,
 				2848DED5290EAB7C0001949C /* AddQuackView.swift in Sources */,
 				2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */,

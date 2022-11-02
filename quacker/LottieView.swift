@@ -16,7 +16,7 @@ struct LottieView: UIViewRepresentable{
         let view = UIView(frame: .zero)
         
         //Add animation
-        let animationView = AnimationView()
+        let animationView = LottieAnimationView()
         animationView.animation = Animation.named("duck")
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop

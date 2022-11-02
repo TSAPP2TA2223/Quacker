@@ -13,6 +13,9 @@ struct LoginView: View {
     @State private var password = ""
     @State private var userIsLoggedIn = false
     @State private var path = [String]()
+    
+    @StateObject var dataManager = DataManager()
+    
     init(){
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.systemYellow]
         try? Auth.auth().signOut()
@@ -70,7 +73,8 @@ struct LoginView: View {
                 if string == "register" {
                     SignUpView()
                 } else {
-                    AddQuackView()
+                    MainView()
+                        .environmentObject(dataManager)
                 }
             })
             .navigationTitle("Login")
@@ -81,15 +85,11 @@ struct LoginView: View {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
                 print(error!.localizedDescription)
+            } else {
+                path.append(Auth.auth().currentUser!.email!)
             }
         }
-        let authemail = Auth.auth().currentUser?.email ?? ""
-        print(authemail)
-        if authemail != ""{
-            userIsLoggedIn = true
-            path.append(Auth.auth().currentUser!.email!)
            
-        }
     }
     
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SplashScreenView: View {
-    @EnvironmentObject var dataManager: DataManager
+    @StateObject var dataManager = DataManager()
     @State private var isActive = false
     
     var body: some View {
