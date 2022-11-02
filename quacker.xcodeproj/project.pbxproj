@@ -45,6 +45,7 @@
 		286239F8290DDC1400E65AAA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F6290DDC1300E65AAA /* SignUpView.swift */; };
 		286239F9290DDC1400E65AAA /* Camera+Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239F7290DDC1300E65AAA /* Camera+Library.swift */; };
 		286239FD290DE45D00E65AAA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286239FA290DE45D00E65AAA /* LoginView.swift */; };
+		2881905729127D6A008EC8A9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881905629127D6A008EC8A9 /* ProfileView.swift */; };
 		2D7E9E06290CA28500310FCA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E05290CA28500310FCA /* SplashScreenView.swift */; };
 		2D7E9E09290CA7E600310FCA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7E9E08290CA7E600310FCA /* Lottie */; };
 		2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E9E0A290CAA6F00310FCA /* LottieView.swift */; };
@@ -66,6 +67,7 @@
 		286239F6290DDC1300E65AAA /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		286239F7290DDC1300E65AAA /* Camera+Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+Library.swift"; sourceTree = "<group>"; };
 		286239FA290DE45D00E65AAA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2881905629127D6A008EC8A9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2D7E9E05290CA28500310FCA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		2D7E9E0A290CAA6F00310FCA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2D7E9E0C290CAD6500310FCA /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				283BF7FC290C8FF700AB53ED /* ContentView.swift */,
 				286239F7290DDC1300E65AAA /* Camera+Library.swift */,
 				286239FA290DE45D00E65AAA /* LoginView.swift */,
+				2881905629127D6A008EC8A9 /* ProfileView.swift */,
 				286239F6290DDC1300E65AAA /* SignUpView.swift */,
 				2848DEDA290EFA8A0001949C /* User.swift */,
 				2D7E9E05290CA28500310FCA /* SplashScreenView.swift */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */,
+				2881905729127D6A008EC8A9 /* ProfileView.swift in Sources */,
 				2848DED9290EB6830001949C /* DataManager.swift in Sources */,
 				286239FD290DE45D00E65AAA /* LoginView.swift in Sources */,
 				2848DED7290EABF30001949C /* Quack.swift in Sources */,

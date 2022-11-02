@@ -23,7 +23,9 @@ struct quackerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            LoginView()
+            /*ProfileView()
+                .environmentObject(DataManager())*/
         }
     }
 }
