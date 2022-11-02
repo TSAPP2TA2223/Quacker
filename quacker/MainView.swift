@@ -10,6 +10,7 @@ import Firebase
 
 struct MainView: View {
     @EnvironmentObject var dataManager : DataManager
+    @State var selectedTab : Tabs = .home
     var body: some View {
         VStack {
             List(dataManager.quacks, id: \.id) { quack in
@@ -38,6 +39,9 @@ struct MainView: View {
                     .multilineTextAlignment(.center)
             }
             
+            Spacer()
+            
+            CustomTabBar(selectedTab: $selectedTab)
         }
         .navigationBarBackButtonHidden(true)
         
