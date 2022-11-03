@@ -13,7 +13,7 @@ struct LoginView: View {
     @State private var password = ""
     @State private var userIsLoggedIn = false
     @State private var path = [String]()
-    
+    @State private var currentView = "Login"
     @StateObject var dataManager = DataManager()
     
     init(){
@@ -21,7 +21,8 @@ struct LoginView: View {
         try? Auth.auth().signOut()
     }
     var body: some View {
-        NavigationStack(path: $path) {
+        switch(currentView){
+        case "Login":
             GeometryReader { geo in
                 ZStack{
                     Color("ColorBackground")
@@ -58,7 +59,7 @@ struct LoginView: View {
                         }
                         
                         Button{
-                            path.append("register")
+                            currentView = "Register"
                         } label: {
                             Text("Don't have an account?")
                                 .bold()
@@ -69,24 +70,25 @@ struct LoginView: View {
                 }
                 .ignoresSafeArea()
             }
-            .navigationDestination(for: String.self, destination: { string in
-                if string == "register" {
-                    SignUpView()
-                } else {
-                    MainView()
-                        .environmentObject(dataManager)
-                }
-            })
             .navigationTitle("Login")
             .navigationBarBackButtonHidden(true)
+        case "Register":
+            SignUpView()
+        case "Main":
+            MainView()
+                .environmentObject(dataManager)
+        default:
+            LoginView()
         }
+            
+        
     }
     func login() {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
                 print(error!.localizedDescription)
             } else {
-                path.append(Auth.auth().currentUser!.email!)
+                currentView = "Main"
             }
         }
            
