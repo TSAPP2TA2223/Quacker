@@ -41,28 +41,6 @@ class DataManager: ObservableObject {
         }
     }
     
-    func getUserName(owner : String) -> String {
-        let db = Firestore.firestore()
-        var fullName : String = ""
-        let docRef = db.collection("UserProfiles").document(owner)
-        self.semaphore.wait()
-        docRef.getDocument { (snapshot, error) in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                self.semaphore.signal()
-            
-                return
-            }
-            
-            if let snapshot = snapshot {
-                let data = snapshot.data()
-                fullName = data?["fullName"] as? String ?? ""
-                self.semaphore.signal()
-            }
-        }
-        return fullName
-    }
-    
 }
 //docRef.getDocument { snapshot, error in
 //

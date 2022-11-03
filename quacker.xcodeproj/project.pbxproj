@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2822C29A2914066F00D3EF71 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822C2992914066F00D3EF71 /* MessagesView.swift */; };
+		2822C29C2914079D00D3EF71 /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822C29B2914079D00D3EF71 /* DiscoveryView.swift */; };
 		283BF7FB290C8FF700AB53ED /* quackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283BF7FA290C8FF700AB53ED /* quackerApp.swift */; };
 		283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283BF7FC290C8FF700AB53ED /* ContentView.swift */; };
 		283BF7FF290C8FF800AB53ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283BF7FE290C8FF800AB53ED /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2822C2992914066F00D3EF71 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		2822C29B2914079D00D3EF71 /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
 		283BF7F7290C8FF700AB53ED /* quacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283BF7FA290C8FF700AB53ED /* quackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quackerApp.swift; sourceTree = "<group>"; };
 		283BF7FC290C8FF700AB53ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				2FF5C224290F040100FC2EFB /* MainView.swift */,
 				2F4409D229132349009E4096 /* CustomTabBar.swift */,
 				2F4409D429132E6E009E4096 /* TabBarButton.swift */,
+				2822C2992914066F00D3EF71 /* MessagesView.swift */,
+				2822C29B2914079D00D3EF71 /* DiscoveryView.swift */,
 			);
 			path = quacker;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2822C29A2914066F00D3EF71 /* MessagesView.swift in Sources */,
 				283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */,
 				2881905729127D6A008EC8A9 /* ProfileView.swift in Sources */,
 				2F4409D32913234A009E4096 /* CustomTabBar.swift in Sources */,
@@ -289,6 +296,7 @@
 				2848DED5290EAB7C0001949C /* AddQuackView.swift in Sources */,
 				2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */,
 				2848DEDB290EFA8A0001949C /* User.swift in Sources */,
+				2822C29C2914079D00D3EF71 /* DiscoveryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
