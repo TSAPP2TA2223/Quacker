@@ -10,6 +10,7 @@
 		2822C29A2914066F00D3EF71 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822C2992914066F00D3EF71 /* MessagesView.swift */; };
 		2822C29C2914079D00D3EF71 /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822C29B2914079D00D3EF71 /* DiscoveryView.swift */; };
 		2822C29E2914220F00D3EF71 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822C29D2914220F00D3EF71 /* NotificationView.swift */; };
+		2822C2A029142B3C00D3EF71 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822C29F29142B3C00D3EF71 /* DetailView.swift */; };
 		283BF7FB290C8FF700AB53ED /* quackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283BF7FA290C8FF700AB53ED /* quackerApp.swift */; };
 		283BF7FD290C8FF700AB53ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283BF7FC290C8FF700AB53ED /* ContentView.swift */; };
 		283BF7FF290C8FF800AB53ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283BF7FE290C8FF800AB53ED /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		2822C2992914066F00D3EF71 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		2822C29B2914079D00D3EF71 /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
 		2822C29D2914220F00D3EF71 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		2822C29F29142B3C00D3EF71 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		283BF7F7290C8FF700AB53ED /* quacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283BF7FA290C8FF700AB53ED /* quackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quackerApp.swift; sourceTree = "<group>"; };
 		283BF7FC290C8FF700AB53ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				2822C2992914066F00D3EF71 /* MessagesView.swift */,
 				2822C29B2914079D00D3EF71 /* DiscoveryView.swift */,
 				2822C29D2914220F00D3EF71 /* NotificationView.swift */,
+				2822C29F29142B3C00D3EF71 /* DetailView.swift */,
 			);
 			path = quacker;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				2848DED5290EAB7C0001949C /* AddQuackView.swift in Sources */,
 				2D7E9E0B290CAA6F00310FCA /* LottieView.swift in Sources */,
 				2848DEDB290EFA8A0001949C /* User.swift in Sources */,
+				2822C2A029142B3C00D3EF71 /* DetailView.swift in Sources */,
 				2822C29C2914079D00D3EF71 /* DiscoveryView.swift in Sources */,
 				2822C29E2914220F00D3EF71 /* NotificationView.swift in Sources */,
 			);

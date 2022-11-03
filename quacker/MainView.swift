@@ -29,6 +29,8 @@ struct MainView: View {
                                     Text(quack.owner)
                                     Text(quack.contents)
                                         .font(.subheadline)
+                                }.onTapGesture {
+                                    path.append(quack.uidstring!)
                                 }
                             }
                         }
@@ -98,8 +100,7 @@ struct MainView: View {
                         } else if string == "AddQuack" {
                             AddQuackView()
                         } else {
-                            MainView()
-                                .environmentObject(dataManager)
+                            DetailView(uid: string)
                         }
                     })
                 }
@@ -130,7 +131,6 @@ struct MainView: View {
             if let snapshot = snapshot{
                 let data = snapshot.data()
                 let img = data?["profilePicture"] as? String ?? ""
-                print(img)
                 userImage = convertBase64ToImage(imageString: img)
             }
         }

@@ -51,7 +51,6 @@ struct AddQuackView: View {
             if let snapshot = snapshot{
                 let data = snapshot.data()
                 let img = data?["profilePicture"] as? String ?? ""
-                print(img)
                 userImage = convertBase64ToImage(imageString: img)
             }
         }
@@ -75,7 +74,7 @@ func sendQuack(quackContents: String, quackOwner: String){
     let newQuack = Quack(owner: quackOwner, contents: quackContents)
     
     let ref = db.collection("Quacks").document(newQuack.id.description)
-    ref.setData(["contents": newQuack.contents, "id" : 10, "owner": newQuack.owner]) { error in
+    ref.setData(["contents": newQuack.contents, "id" : newQuack.id.description, "owner": newQuack.owner]) { error in
         //TODO: error management
     }
 }

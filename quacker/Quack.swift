@@ -8,6 +8,7 @@
 import SwiftUI
 struct Quack: Identifiable {
     public var id = UUID()
+    public var uidstring: String?
     public var owner: String
     public var contents: String 
 }

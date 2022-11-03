@@ -49,7 +49,6 @@ class PhotoLibraryCoordinator: NSObject, UIImagePickerControllerDelegate, UINavi
         self.parent = parent
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print("Image selected")
         
         if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
             DispatchQueue.main.async {
@@ -65,7 +64,6 @@ class CameraCoordinator: NSObject, UIImagePickerControllerDelegate, UINavigation
         self.parent = parent
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print("Image selected")
         
         if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
             DispatchQueue.main.async {

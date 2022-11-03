@@ -32,8 +32,9 @@ class DataManager: ObservableObject {
                     
                     let owner = data["owner"] as? String ?? ""
                     let content = data["contents"] as? String ?? ""
+                    let uidstring = data["id"] as? String ?? ""
                     
-                    let quack = Quack(owner: owner, contents: content)
+                    let quack = Quack(uidstring: uidstring, owner: owner, contents: content)
                     self.quacks.append(quack)
                     
                 }

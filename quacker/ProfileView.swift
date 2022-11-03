@@ -95,7 +95,6 @@ struct ProfileView: View {
             if let snapshot = snapshot{
                 let data = snapshot.data()
                 let img = data?["profilePicture"] as? String ?? ""
-                print(img)
                 userImage = convertBase64ToImage(imageString: img)
             }
         }
