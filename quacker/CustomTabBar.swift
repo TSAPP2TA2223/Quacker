@@ -17,37 +17,40 @@ struct CustomTabBar: View {
     
     @Binding var selectedTab : Tabs 
     var body: some View {
-        HStack (alignment: .center) {
-            //HOME
-            Button {
-                selectedTab = .home
-            } label: {
-                TabBarButton(imageName: "house", isActive: selectedTab == .home)
+        ZStack{
+            Color("ColorBackground")
+            HStack (alignment: .center) {
+                //HOME
+                Button {
+                    selectedTab = .home
+                } label: {
+                    TabBarButton(imageName: "house", isActive: selectedTab == .home)
+                }
+                .tint(.yellow)
+                //DISCOVER
+                Button {
+                    selectedTab = .discover
+                } label: {
+                    TabBarButton(imageName: "magnifyingglass", isActive: selectedTab == .discover)
+                }
+                .tint(.yellow)
+                //NOTIFICATIONS
+                Button {
+                    selectedTab = .notifications
+                } label: {
+                    TabBarButton(imageName: "bell", isActive: selectedTab == .notifications)
+                }
+                .tint(.yellow)
+                //CHAT
+                Button {
+                    selectedTab = .chat
+                } label: {
+                    TabBarButton(imageName: "envelope", isActive: selectedTab == .chat)
+                }
+                .tint(.yellow)
             }
-            .tint(.yellow)
-            //DISCOVER
-            Button {
-                selectedTab = .discover
-            } label: {
-                TabBarButton(imageName: "magnifyingglass", isActive: selectedTab == .discover)
-            }
-            .tint(.yellow)
-            //NOTIFICATIONS
-            Button {
-                selectedTab = .notifications
-            } label: {
-                TabBarButton(imageName: "bell", isActive: selectedTab == .notifications)
-            }
-            .tint(.yellow)
-            //CHAT
-            Button {
-                selectedTab = .chat
-            } label: {
-                TabBarButton(imageName: "envelope", isActive: selectedTab == .chat)
-            }
-            .tint(.yellow)
-        }
-        .frame(height: 82)
+            
+        }.frame(height: 82)
     }
 }
 

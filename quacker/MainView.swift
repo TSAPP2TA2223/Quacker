@@ -59,6 +59,15 @@ struct MainView: View {
                                 if selectedTab == Tabs.chat{
                                    currentView = "messages"
                                 }
+                                if selectedTab == Tabs.notifications{
+                                    
+                                }
+                                if selectedTab == Tabs.discover{
+                                    currentView = "discovery"
+                                }
+                                if selectedTab == Tabs.notifications{
+                                    currentView = "notification"
+                                }
                             })
                             
                     }
@@ -95,9 +104,12 @@ struct MainView: View {
                     })
                 }
             }
+        case "discovery":
+            DiscoveryView()
         case "messages":
             MessagesView()
-                
+        case "notification":
+            NotificationView()
         default:
             MainView()
                 .environmentObject(dataManager)

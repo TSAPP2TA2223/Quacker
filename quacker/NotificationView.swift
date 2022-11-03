@@ -1,5 +1,5 @@
 //
-//  MessagesView.swift
+//  DiscoveryView.swift
 //  quacker
 //
 //  Created by Abby Dominguez on 3/11/22.
@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct MessagesView: View {
-    @State var selectedTab : Tabs = .chat
-    @State private var currentView: String = "messages"
+struct NotificationView: View {
+    @State var selectedTab : Tabs = .notifications
+    @State private var currentView: String = "notification"
     var body: some View {
         switch(currentView){
-        case "messages":
+        case "notification":
             ZStack{
                 Color("ColorBackground")
                 VStack{
                     Spacer()
-                    Text("No new messages")
+                    Text("No new notifications")
                         .foregroundColor(.brown)
-                    Image(systemName: "envelope")
+                    Image(systemName: "bell")
                         .foregroundColor(.brown)
                     Spacer()
                     CustomTabBar(selectedTab: $selectedTab)
@@ -30,8 +30,8 @@ struct MessagesView: View {
                             if selectedTab == Tabs.discover{
                                 currentView = "discovery"
                             }
-                            if selectedTab == Tabs.notifications{
-                                currentView = "notification"
+                            if selectedTab == Tabs.chat{
+                                currentView = "messages"
                             }
                         })
                 }
@@ -39,31 +39,18 @@ struct MessagesView: View {
             .ignoresSafeArea()
         case "discovery":
             DiscoveryView()
+        case "messages":
+            MessagesView()
         case "main":
             MainView()
-        case "notification":
-            NotificationView()
         default:
-            ZStack{
-                Color("ColorBackground")
-                VStack{
-                    Spacer()
-                    CustomTabBar(selectedTab: $selectedTab)
-                        .onChange(of: selectedTab, perform: { newValue in
-                            if selectedTab == Tabs.home{
-                                currentView = "main"
-                            }
-                        })
-                }
-            }
-            
-            
+            NotificationView()
         }
     }
 }
 
-struct MessagesView_Previews: PreviewProvider {
+struct NotificationVoew_Previews: PreviewProvider {
     static var previews: some View {
-        MessagesView()
+        DiscoveryView()
     }
 }
