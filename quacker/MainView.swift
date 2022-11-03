@@ -11,48 +11,57 @@ import Firebase
 struct MainView: View {
     @EnvironmentObject var dataManager : DataManager
     @State var selectedTab : Tabs = .home
+    @State private var path = [String]()
     var body: some View {
-        ZStack{
-            Color("ColorBackground")
-        VStack {
-            List(dataManager.quacks, id: \.id) { quack in
-                HStack {
-                    Image(systemName: "photo")
-                    VStack(alignment: .leading) {
-                        Text(quack.owner)
-                        Text(quack.contents)
-                            .font(.subheadline)
-                    }
-                }
-            }
-            HStack{
-                Spacer()
-                Button {
-                    //TODO: Go to add quakc
-                } label: {
-                    Text("+")
-                        .bold()
-                        .frame(width: 60, height: 60)
-                        .background{
-                            RoundedRectangle(cornerRadius: 40, style: .continuous)
-                                .foregroundColor(Color.yellow)
+        NavigationStack(path: $path){
+            ZStack{
+                Color("ColorBackground")
+                VStack {
+                    List(dataManager.quacks, id: \.id) { quack in
+                        HStack {
+                            Image(systemName: "photo")
+                            VStack(alignment: .leading) {
+                                Text(quack.owner)
+                                Text(quack.contents)
+                                    .font(.subheadline)
+                            }
                         }
-                        .foregroundColor(.white)
-                        .font(.system(size : 40))
-                        .multilineTextAlignment(.center)
+                    }
+                    HStack{
+                        Spacer()
+                        Button {
+                            path.append("AddQuack")
+                        } label: {
+                            Text("+")
+                                .bold()
+                                .frame(width: 60, height: 60)
+                                .background{
+                                    RoundedRectangle(cornerRadius: 40, style: .continuous)
+                                        .foregroundColor(Color.yellow)
+                                }
+                                .foregroundColor(.white)
+                                .font(.system(size : 40))
+                                .multilineTextAlignment(.center)
+                        }
+                        .padding(20)
+                    }
+                    
+                    Spacer()
+                    
+                    CustomTabBar(selectedTab: $selectedTab)
                 }
-                .padding(20)
+                .navigationBarBackButtonHidden(true)
+                .navigationTitle("Quacker")
+                .navigationDestination(for: String.self, destination: { string in
+                    if string == "AddQuack" {
+                        AddQuackView()
+                    } else {
+                        MainView()
+                            .environmentObject(dataManager)
+                    }
+                })
             }
-            
-            Spacer()
-            
-            CustomTabBar(selectedTab: $selectedTab)
         }
-        .navigationBarBackButtonHidden(true)
-        .navigationTitle("Quacker")
-    }
-        
-        
     }
     
     

@@ -12,7 +12,6 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var userIsLoggedIn = false
-    @State private var path = [String]()
     @State private var currentView = "Login"
     @StateObject var dataManager = DataManager()
     

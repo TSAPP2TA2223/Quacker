@@ -31,7 +31,7 @@ struct AddQuackView: View {
             }
             .padding()
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarBackButtonHidden(false)
         .onAppear(perform: fetchImage)
     }
         
