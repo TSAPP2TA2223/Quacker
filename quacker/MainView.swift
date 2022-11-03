@@ -12,6 +12,7 @@ struct MainView: View {
     @EnvironmentObject var dataManager : DataManager
     @State var selectedTab : Tabs = .home
     @State private var path = [String]()
+    @State private var currentUserEmail: String?
     var body: some View {
         NavigationStack(path: $path){
             ZStack{
@@ -27,6 +28,9 @@ struct MainView: View {
                             }
                         }
                     }
+                }
+                VStack{
+                    Spacer()
                     HStack{
                         Spacer()
                         Button {
@@ -44,16 +48,18 @@ struct MainView: View {
                                 .multilineTextAlignment(.center)
                         }
                         .padding(20)
+                        
                     }
-                    
-                    Spacer()
-                    
                     CustomTabBar(selectedTab: $selectedTab)
                 }
+                .ignoresSafeArea()
                 .navigationBarBackButtonHidden(true)
                 .navigationTitle("Quacker")
                 .navigationDestination(for: String.self, destination: { string in
-                    if string == "AddQuack" {
+                    if string == "User"{
+                        ProfileView()
+                            .environmentObject(dataManager)
+                    } else if string == "AddQuack" {
                         AddQuackView()
                     } else {
                         MainView()

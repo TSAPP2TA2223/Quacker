@@ -25,7 +25,10 @@ struct AddQuackView: View {
                 .clipShape(Circle())
             TextField("Quack", text: $content)
             Button {
-                sendQuack(quackContents: content, quackOwner: (Auth.auth().currentUser?.email)!)
+                if content != "" {
+                    sendQuack(quackContents: content, quackOwner: (Auth.auth().currentUser?.email)!)
+                    content = ""
+                }
             } label: {
                 Text("Send")
             }
