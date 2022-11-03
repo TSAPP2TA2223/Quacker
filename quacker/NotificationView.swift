@@ -11,15 +11,26 @@ struct NotificationView: View {
     @State var selectedTab : Tabs = .notifications
     @State private var currentView: String = "notification"
     var body: some View {
+        
         switch(currentView){
         case "notification":
             ZStack{
                 Color("ColorBackground")
                 VStack{
                     Spacer()
-                    Text("No new notifications")
-                        .foregroundColor(.brown)
-                    Image(systemName: "bell")
+                    List(0 ..< 15) {
+                        item in HStack{
+                            Image(systemName: "person.circle.fill")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                            VStack(alignment: .leading) {
+                                Text("Username")
+                                Text("Notification")
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                    }.padding(20)
                         .foregroundColor(.brown)
                     Spacer()
                     CustomTabBar(selectedTab: $selectedTab)
